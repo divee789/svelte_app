@@ -1,0 +1,100 @@
+:root {
+	--accent-color: #102649;
+	--secondary-color: #f18805;
+	--background:linear-gradient(to right, #1400FF -150%, #FC199B 130%);
+	/* --other-color:#F0A202;
+	   */
+	--other-color: rgba(240, 162, 2, 0.1);
+  --btn-color:#1400FF;
+  --back-color:#151027;
+  }
+
+@font-face {
+  font-family: firma-bold;
+  src: url(fonts/br-firma/BRFirmaCW-Bold.woff2);
+}
+@font-face {
+  font-family: Sailec;
+  src: url(fonts/sailec/Sailec-Regular.woff2);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Sailec, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* background: rgba(250,250,250,0.8); */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: -0.7px;
+  line-height: 1.25;
+  margin-bottom: 0.7em;
+  font-weight: bold;
+  font-family: firma-bold;
+}
+section{
+    position: relative;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+/* a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+} */
+*/ input:disabled {
+  color: #ccc;
+}
+
+button {
+  outline: none;
+}
+
+.button {
+  align-self: flex-start;
+  line-height: 48px;
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "CW BR Firma", sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 4px 0 rgba(2, 43, 105, 0.08);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.button:hover{
+  box-shadow: 0 2px 4px 0 rgba(2, 43, 105, 0.38);
+  transition-duration: 0.5s;
+  margin-top:2px;
+}
+.button:active{
+  box-shadow: none;
+  margin-top:6px;
+}
