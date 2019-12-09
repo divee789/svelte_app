@@ -45,7 +45,7 @@
 
 <style>
   section {
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
   }
 
   h3,
@@ -89,7 +89,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20% 60%;
-    box-shadow: inset 0 0 0 2000vw rgba(255, 25, 155, 0.7);
+    box-shadow: inset 0 0 0 2000vw rgba(16, 38, 73, 0.7);
     z-index: -1;
   }
   h1 {
@@ -181,17 +181,17 @@
       width: unset;
     }
   }
-    @media screen and (min-width:600px) and (max-width:1200px){
-      h3{
-        width:90%;
-      }
-      .card{
-        width:unset;
-      }
-      .bg-image{
-        width:300px;
-      }
-      }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    h3 {
+      width: 90%;
+    }
+    .card {
+      width: unset;
+    }
+    .bg-image {
+      width: 300px;
+    }
+  }
 </style>
 
 <section>

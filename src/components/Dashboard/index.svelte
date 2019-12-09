@@ -69,7 +69,7 @@
     font-size: 1rem;
     color: #0a2e65;
     opacity: 0.8;
-    padding: 15px 25px;
+    padding: 15px 45px;
     margin-bottom: 5px;
     width: 100%;
     transition-property: opacity, background-color;
@@ -83,37 +83,14 @@
     color: #0066f5;
     background-color: rgba(0, 102, 245, 0.07);
   }
+  :global(.item:hover) {
+   opacity: .9;
+    background-color: rgba(10,46,101,.04);
+  }
   .main {
     flex-basis: 86%;
     max-width: 86%;
     padding: 0;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-  }
-  .title {
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    flex-basis: 100%;
-    text-align: center;
-  }
-  .container {
-    background-color: #fff;
-    border-top-left-radius: 12px;
-    box-shadow: -3px 3px 12px rgba(10, 46, 101, 0.03);
-    padding: 20px 25px 0;
-  }
-  .scroll {
-    height: 699px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-bottom: 30px;
-    scroll-behavior: smooth;
   }
 
    @media screen and (max-width:600px){
@@ -138,8 +115,8 @@
           </a>
         </p>
         <h4 class="greet_user">
-          Howdy
-          <span class="username">Peter</span>
+          Hello
+          <span class="username">Peterlujop</span>
         </h4>
         <div class="sidenav-list">
 
@@ -174,6 +151,13 @@
             class="item">
             Stash
           </a>
+           <a
+            href="/dashboard/stash"
+            use:link
+            use:active={{ path: '/dashboard/stash', className: 'active' }}
+            class="item">
+            Referral
+          </a>
           <a
             href="/dashboard/payment"
             use:link
@@ -188,13 +172,6 @@
     </div>
   </div>
   <div class="main">
-    <div class="navbar">
-      <span class="title">Account Overview</span>
-    </div>
-    <div class="container">
-      <div class="scroll">
         <Router {routes} {prefix} />
-      </div>
-    </div>
   </div>
 </section>

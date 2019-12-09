@@ -54,7 +54,7 @@
       background: #3d94dd;
     }
     .c {
-      background: #eaa844;
+      background: var(--accent-color);
     }
   }
 </style>
